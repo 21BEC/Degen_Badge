@@ -34,7 +34,7 @@ contract Dengen_Badge is ERC20 {
 
     function getbalance(address account) public view  returns (uint256) {
         return super.balanceOf(account);  
-        //it is already built it in ERC20 that's why we are able to call it
+        //it is already built in ERC20 that's why we are able to call it
     }
 
     function getOwner() public view returns (address) {
