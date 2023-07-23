@@ -1,7 +1,7 @@
 # Degen_Badge
 
 ## Description
-Dengen Badge is a Solidity smart contract that implements the ERC20 token standard. It is used to create and manage a token called "Degen Coin" (DGN). The contract allows for minting, burning, and transferring tokens, as well as checking token balances and retrieving the owner's address.
+Dengen Badge is a Solidity smart contract that implements the ERC20 token standard. It is used to create and manage a token called "Degen Coin" (DGN). The contract allows for minting, burning, and transferring tokens, adding items to the store with their price and we can also redeem those items from the store and we can also check the  balance left after burning or redeeming and retrieving the owner's address.
 
 ## Deploy contract
 To use the Dengen Badge contract, you need to have a Solidity development environment set up. and this contract has been deployed using Solidity version 0.8.0.
@@ -20,6 +20,10 @@ To use the Dengen Badge contract, you need to have a Solidity development enviro
 - Tokens can be transferred to other addresses by calling the transferTokens function, specifying the recipient's address and the number of tokens to transfer.
 
 - The contract provides a get balance function to check the balance of tokens for a specific account.
+- To redeem an item from the store first, we need to add the items to the store with their price
+- after that redeem them but before redeeming make sure you have the sufficient token in your wallet.
+
+## Contribution
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
