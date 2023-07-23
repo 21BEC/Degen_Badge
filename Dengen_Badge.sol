@@ -15,7 +15,7 @@ contract Dengen_Badge is ERC20, Ownable {
         _mint(msg.sender, 1000000 * 5**decimals());
     }
 
-    // Function to mint new tokens (only the owner can do this)
+    // Function to mint new tokens
     function mintTokens(address account, uint256 amount) public onlyOwner {
         _mint(account, amount);
         emit Transfer(address(0), account, amount);
@@ -25,13 +25,13 @@ contract Dengen_Badge is ERC20, Ownable {
         require(_itemPrices[item] > 0, "Item not available for redemption");
         require(balanceOf(msg.sender) >= _itemPrices[item], "Insufficient balance");
 
-        // Perform the redemption (in this example, transfer the tokens to the contract owner)
+        // Perform the redemption
         _transfer(msg.sender, owner(), _itemPrices[item]);
 
         emit ItemRedeemed(msg.sender, item);
     }
 
-    // Function to add items and their prices
+    // add items and their prices
     function addItemToStore(string memory item, uint256 price) public onlyOwner {
         require(price > 0, "Price must be greater than zero");
         _itemPrices[item] = price;
