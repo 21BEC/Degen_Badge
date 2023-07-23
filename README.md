@@ -23,7 +23,10 @@ To use the Dengen Badge contract, you need to have a Solidity development enviro
 - To redeem an item from the store first, we need to add the items to the store with their price
 - after that redeem them but before redeeming make sure you have the sufficient token in your wallet.
 
-## Contribution
+## Contributing
+Please note that this project is intended for educational and testing purposes. Before deploying it on a live network, ensure proper testing and auditing to avoid potential risks. Feel free to explore the code and extend the functionalities to suit your specific needs.
+
+We hope you will like the Dengen_Badge game store will serve as a useful starting point for your projects on the AVAX. Happy creating and collecting!
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
